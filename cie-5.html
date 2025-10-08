@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Horizon Times</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #2c2c2c;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #eaf2ff;
+    }
+    header {
+      background-color: #6b705c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #a5a58d;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    main {
+      display: flex;
+      margin-top: 20px;
+    }
+    section {
+      flex: 2;
+      margin-left: 20px;
+    }
+    article {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+    }
+    article h2 {
+      color: #6b705c;
+      font-size: 1.8em;
+    }
+    aside {
+      flex: 1;
+      background-color: #f0ead2;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      order: -1;
+    }
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    figcaption {
+      font-style: italic;
+      color: #555;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #e6ccb2;
+    }
+    footer {
+      background-color: #6b705c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aurora Daily</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">World</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href="#">Culture</a></li>
+      <li><a href="#">Travel</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <article>
+        <h2>Tharun G Bhat - 4MW23CS175</h2>
+        <h2>Campus Hackathon: Ideas to Impact</h2>
+        <p>Teams sprinted through 24 hours to prototype assistive tools for accessibility, culminating in demos that impressed judges with practical, human-centered solutions.</p>
+        <figure>
+          <img src="images/hackathon.jpg" alt="Students collaborating at a hackathon" />
+          <figcaption>Late-night brainstorming during the final build window.</figcaption>
+        </figure>
+      </article>
+      <article>
+        <h2>Tech Talk Recap: Building with WebAssembly</h2>
+        <p>Guest engineers unpacked real-world patterns for running high-performance modules in the browser, highlighting tooling, debugging tips, and deployment gotchas.</p>
+        <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Topic</th>
+          </tr>
+          <tr>
+            <td>Riya Menon</td>
+            <td>Optimizing hot paths with WASM</td>
+          </tr>
+          <tr>
+            <td>Karthik Iyer</td>
+            <td>Packaging Rust for the web</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <aside>
+      <h3>Transit Bulletin</h3>
+      <p>Shuttle B is rerouted via North Gate 10–2 PM. Expect brief delays on the east loop.</p>
+      <h3>Don’t Miss</h3>
+      <ul>
+        <li>Open Source Sprint — Friday Evening</li>
+        <li>Data Viz Workshop — Nov 14</li>
+        <li>Stargazing Meetup — Oct 22</li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; 2023 The Horizon Times. All rights reserved.</p>
+  </footer>
+</body>
+</html>
