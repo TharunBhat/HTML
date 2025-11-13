@@ -9,7 +9,8 @@
     text-align:center; 
     margin-top:20px;    
     }
- table{ margin:auto; 
+ table{ 
+    margin:auto; 
     border-collapse:collapse; 
     width:80%; 
     }
@@ -23,11 +24,12 @@
  </style>
 </head>
 <body>
+    <h1> Tharun G Bhat - 4MW23CS175</h1>
  <h1>Sorted Student Records</h1>
  <table>
  <tr><th>ID</th><th>Name</th><th>Grade</th></tr>
  <?php
- $conn = new mysqli("localhost", "root", "", "students124");
+ $conn = new mysqli("localhost", "root", "1239", "students124");
  $students = $conn->query("SELECT * FROM 
 students124")->fetch_all(MYSQLI_ASSOC);
 for ($i = 0; $i < count($students) - 1; $i++) {
